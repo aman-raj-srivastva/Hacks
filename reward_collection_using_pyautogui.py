@@ -15,13 +15,16 @@ def stop_loop():
 keyboard.add_hotkey('shift', stop_loop)
 
 # Mouse positions for each action
-positions = [(340, 155), (1315, 155), (1315, 667), (340, 667)]
+# positions = [(340, 155), (1315, 155), (1315, 667), (340, 667)]
+positions = [(340, 155)] 
+# positions = [(340, 198)] 
 
 # Loop through ASCII values 65 (A) to 83 (S)
 for i in range(65, 94):
     char = chr(i)
 
-    time.sleep(1)  # Delay before each iteration
+    time.sleep(6)  # Delay before each iteration
+    # time.sleep(1)  # Delay before each iteration
     
     # Iterate through predefined positions
     for pos in positions:
