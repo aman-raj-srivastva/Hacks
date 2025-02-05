@@ -43,9 +43,9 @@ def mob():
         pyautogui.write(char)
         pyautogui.press('enter')
 
-def rmpc():  
+def minpc():  
     keyboard.add_hotkey('shift', stop_loop)   
-    positions = [(939, 27), (1889, 16), (1901, 542), (924, 534)] 
+    positions = [(820, 45), (1780, 34), (1784, 539), (808, 534)] 
     for pos in positions:
         if not keep_running:
             break
@@ -63,7 +63,7 @@ def chngmob():
 
 for i in range(1, 4):
     pc()
-    rmpc()
+    minpc()
 
 for i in range(1, 10):
     mob()
